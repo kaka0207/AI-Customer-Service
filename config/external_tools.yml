@@ -1,0 +1,17 @@
+enabled: false
+http_tools:
+  # 示例：打开 enabled 后，可按这个结构接入外部 HTTP 工具服务。
+  # - name: query_order_status
+  #   description: 查询用户订单状态，入参为订单号 order_id，返回外部订单系统的查询结果。
+  #   method: GET
+  #   url: "https://example.com/api/orders/{order_id}"
+  #   timeout: 5
+  #   response_format: json
+  #   params:
+  #     - name: order_id
+  #       type: str
+  #       description: 订单号
+  #       required: true
+  #       location: path
+  #   headers:
+  #     Authorization: "Bearer ${ENV:ORDER_API_TOKEN}"
