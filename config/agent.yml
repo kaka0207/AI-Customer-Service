@@ -1,0 +1,9 @@
+external_data_path: data/external/records.csv
+gaodekey: ""
+gaode_base_url: https://restapi.amap.com
+gaode_timeout: 5
+answer_review:
+  enabled: true
+  max_history_messages: 8
+  max_trace_chars: 6000
+
