@@ -1,0 +1,12 @@
+enabled: true
+backend: json
+user_id_env: MEMORY_USER_ID
+default_user_id: default_user
+persist_directory: memory_db
+collection_name: user_long_term_memory
+top_k: 3
+max_history_messages: 8
+summary_max_chars: 500
+auto_recover_on_error: true
+backup_prefix: memory_db_failed
+json_fallback_path: data/long_term_memory.jsonl
