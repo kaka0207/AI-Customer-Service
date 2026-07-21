@@ -1,0 +1,16 @@
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langgraph
+langchain-chroma
+chromadb
+langchain-postgres
+psycopg[binary]
+dashscope
+openai
+pypdf
+pyyaml
+langchain-text-splitters
+rank-bm25
