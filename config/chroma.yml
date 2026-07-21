@@ -1,0 +1,27 @@
+vector_store_backend: chroma  # chroma 或 pgvector
+retrieval_mode: hybrid_rrf    # vector、bm25 或 hybrid_rrf
+collection_name: agent
+persist_directory: chroma_db
+k: 5
+bm25_k: 3
+rrf_k: 60
+hybrid_vector_k: 8
+hybrid_bm25_k: 8
+rrf_vector_weight: 1.0
+rrf_bm25_weight: 1.0
+data_path: data
+md5_hex_store: md5.text
+allow_knowledge_file_type: ["txt", "pdf"]
+
+chunk_size: 200
+chunk_overlap: 20
+separators: ["\n\n", "\n", ".", "!", "?", "。", "！", "？", " ", ""]
+
+# vector_store_backend: pgvector 时生效
+# 连接串从环境变量读取，避免把数据库账号密码写入仓库。
+pgvector_connection_env: PGVECTOR_CONNECTION_STRING
+
+# 可选：对召回结果做重排。当前使用 DashScope rerank，需配置 DASHSCOPE_API_KEY。
+reranker_enabled: true
+reranker_model: gte-rerank-v2
+reranker_top_n: 3
