@@ -8,15 +8,15 @@
 
 ### 天气环境判断与清洁建议
 
-![天气环境判断与清洁建议](docs/images/chat-weather.png)
+![天气环境判断与清洁建议](chat-weather.png)
 
 ### 使用报告生成
 
-![扫地机器人使用情况报告与保养建议](docs/images/monthly-report.png)
+![扫地机器人使用情况报告与保养建议](monthly-report.png)
 
 ### 对话历史、快捷输入与附件/语音
 
-![对话历史、快捷输入与附件语音功能](docs/images/conversation-history.png)
+![对话历史、快捷输入与附件语音功能](conversation-history.png)
 
 ## 功能
 
